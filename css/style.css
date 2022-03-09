@@ -1117,8 +1117,8 @@ pre .javascript .function {
   width: 100%;
   height: auto;
 /*背景图片路径*/
-/*背景图片路径*/
-  background: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201081000420.jpg");
+/*背景图片路径 https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201081000420.jpg*/
+  background: url("/images/background.png");
 /*背景图片不重复多次显示*/
   background-repeat: no-repeat;
 /*窗口放缩时背景图片中心始终在屏幕中心*/
@@ -1552,7 +1552,7 @@ pre .javascript .function {
   align-items: center;
   justify-content: center;
 /*background: var(--background-color);*/
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.8);
   padding-top: 2px;
   box-shadow: 2px 2px 5px var(--shadow-color);
 }
@@ -2154,7 +2154,9 @@ pre .javascript .function {
   box-sizing: border-box;
   width: 100%;
   overflow: hidden;
-  background: url("/images/bg.svg") center center/cover no-repeat;
+/*显示背景图片
+  background: url($first-screen-img) center center / cover no-repeat;
+  */
   background-position-y: 70px;
 }
 @media (max-width: 780px) {
